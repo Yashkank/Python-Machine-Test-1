@@ -12,6 +12,7 @@ class ClientViewSet(viewsets.ModelViewSet):
         serializer.save(created_by=self.request.user)
     
     
+    
 class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
